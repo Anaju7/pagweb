@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol,li {
+    list-style: none;
+}
+
+body{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    flex-direction: column;
+
+}
+
+header{
+    background-image: url(./img/movies-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 80vh;
+    
+}
+
+.titulo{
+    font-size: max(5rem, 5vw);
+    padding: 15vh 2vh 5vh 2vh;
+    width: max(20vw, 30rem);
+}
+
+.nav-bar ul {
+    list-style: none;
+    position: absolute;
+    font-size: 30px;
+    top:0;
+    right: 0;
+}
+
+.nav-bar li{
+    display:inline;
+
+}
+
+.nav-bar ul li a{
+    color: white;
+    padding: 2px 20px;
+    display: inline-block; 
+    text-decoration: none;
+}
