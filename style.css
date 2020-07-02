@@ -9,6 +9,7 @@ ul,ol,li {
 }
 
 body{
+    background-color: #f1e3cb;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     flex-direction: column;
@@ -26,7 +27,8 @@ header{
 }
 
 .titulo{
-    font-size: max(5rem, 5vw);
+    color: #801336;
+    font-size: max(3rem, 5vw);
     padding: 15vh 2vh 5vh 2vh;
     width: max(20vw, 30rem);
 }
@@ -45,7 +47,7 @@ header{
 }
 
 .nav-bar ul li a{
-    color: white;
+    color: #d92027;
     padding: 2px 20px;
     display: inline-block; 
     text-decoration: none;
@@ -55,7 +57,12 @@ h2 {
     text-align: center;
     margin:30px;
     font-size: 45px;
+    color: #00263b;
 
+}
+
+p{
+    color: #3f3f44;
 }
 
 .info-halo{
@@ -99,6 +106,7 @@ h2 {
 
 
 h3{
+    color: #00263b;
     display:flex;
     justify-content: center;
     margin:10px;
@@ -106,23 +114,70 @@ h3{
 }
 
 .saiba-mais{
+    color: #ff847c;
     text-decoration: none;
     display:flex;
     justify-content: center;
     margin-bottom:100px;
+    position: relative;
+    
 
 }
+
+
+.saiba-mais:before,
+.saiba-mais:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transition: transform .5s ease-in-out;
+   
+}
+
+.saiba-mais:before{
+  border-left: 1px solid #bb596b;
+  border-right: 1px solid #bb596b;
+  transform:scaley(0);
+}
+
+.saiba-mais:after{
+    border-top: 1px solid #bb596b;
+  border-bottom: 1px solid #bb596b;
+    transform:scalex(0);
+}
+
+.saiba-mais:hover:before{
+  transform:scaley(1);
+}
+
+.saiba-mais:hover:after{
+  transform:scalex(1);
+}
+
 .rodape{
+    border: 1px solid gray;
+    height: 20vh;
     display: flex;
     justify-content: center;
 
 }
+
+h5{
+    margin: 20px;
+
+}
+
 .rodape ul{
     position: absolute;
+    padding-top: 100px;
     
 }
 
 .rodape li{
+    margin:10px;
     display:inline;
 
 }
