@@ -9,7 +9,7 @@ ul,ol,li {
 }
 
 body{
-    background-color: #f1e3cb;
+    background-color: black;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     flex-direction: column;
@@ -27,7 +27,7 @@ header{
 }
 
 .titulo{
-    color: #801336;
+    color: #af0404;
     font-size: max(3rem, 5vw);
     padding: 15vh 2vh 5vh 2vh;
     width: max(20vw, 30rem);
@@ -47,22 +47,26 @@ header{
 }
 
 .nav-bar ul li a{
-    color: #d92027;
+    color: #af0404;
     padding: 2px 20px;
     display: inline-block; 
     text-decoration: none;
+}
+
+.nav-bar ul li a:hover{
+    color: #ff0000;
 }
 
 h2 {
     text-align: center;
     margin:30px;
     font-size: 45px;
-    color: #00263b;
+    color: white;
 
 }
 
 p{
-    color: #3f3f44;
+    color: white;
 }
 
 .info-halo{
@@ -106,7 +110,7 @@ p{
 
 
 h3{
-    color: #00263b;
+    color: white;
     display:flex;
     justify-content: center;
     margin:10px;
@@ -114,7 +118,7 @@ h3{
 }
 
 .saiba-mais{
-    color: #ff847c;
+    color: #ff0000;
     text-decoration: none;
     display:flex;
     justify-content: center;
@@ -138,14 +142,14 @@ h3{
 }
 
 .saiba-mais:before{
-  border-left: 1px solid #bb596b;
-  border-right: 1px solid #bb596b;
+  border-left: 1px solid #ff0000;
+  border-right: 1px solid #ff0000;
   transform:scaley(0);
 }
 
 .saiba-mais:after{
-    border-top: 1px solid #bb596b;
-  border-bottom: 1px solid #bb596b;
+    border-top: 1px solid #ff0000;
+  border-bottom: 1px solid #ff0000;
     transform:scalex(0);
 }
 
@@ -158,17 +162,13 @@ h3{
 }
 
 .rodape{
-    border: 1px solid gray;
+    background-color: #af0404;
     height: 20vh;
     display: flex;
     justify-content: center;
 
 }
 
-h5{
-    margin: 20px;
-
-}
 
 .rodape ul{
     position: absolute;
